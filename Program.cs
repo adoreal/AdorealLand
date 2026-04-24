@@ -9,7 +9,7 @@ namespace SOLIDApp
             ThemePark warwarLand = new ThemePark();
             warwarLand.TicketCost = 90;
             warwarLand.AverageDailyAttendance = 50000;            
-            warwarLand.ThemeParkName = "War War Land";
+            warwarLand.ThemeParkName = "Adoreal Land";
             warwarLand.ThemeParkRideAName = "Haunted Mansion";
             warwarLand.ThemeParkRideASpeed = 5;
             warwarLand.ThemeParkRideBName = "Teacups";
