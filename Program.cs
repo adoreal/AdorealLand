@@ -6,30 +6,30 @@ namespace SOLIDApp
     {
         static void Main(string[] args)
         {
-            ThemePark warwarLand = new ThemePark();
-            warwarLand.TicketCost = 90;
-            warwarLand.AverageDailyAttendance = 50000;            
-            warwarLand.ThemeParkName = "Adoreal Land";
-            warwarLand.ThemeParkRideAName = "Haunted Mansion";
-            warwarLand.ThemeParkRideASpeed = 5;
-            warwarLand.ThemeParkRideBName = "Teacups";
-            warwarLand.ThemeParkRideBSpeed = 7;
-            warwarLand.ThemeParkRideCName = "Pirates of the Caribean";
-            warwarLand.ThemeParkRideCSpeed = 5;
-            warwarLand.PrintRides();
+            ThemePark adorealLand = new ThemePark();
+            adorealLand.TicketCost = 90;
+            adorealLand.AverageDailyAttendance = 50000;            
+            adorealLand.ThemeParkName = "Adoreal Land";
+            adorealLand.ThemeParkRideAName = "Haunted Mansion";
+            adorealLand.ThemeParkRideASpeed = 5;
+            adorealLand.ThemeParkRideBName = "Teacups";
+            adorealLand.ThemeParkRideBSpeed = 7;
+            adorealLand.ThemeParkRideCName = "Pirates of the Caribean";
+            adorealLand.ThemeParkRideCSpeed = 5;
+            adorealLand.PrintRides();
 
-            warwarLand.RestaurantAName = "Pizzasaurus Rex";
-            warwarLand.RestaurantAIncome = 5;
-            warwarLand.RestaurantALoss = 3;
-            warwarLand.RestaurantBName = "Planet Mars Burgers";
-            warwarLand.RestaurantBIncome = 8;
-            warwarLand.RestaurantBLoss = 7.5F;
-            warwarLand.RestaurantCName = "Salads Undersea";
-            warwarLand.RestaurantCIncome = 3;
-            warwarLand.RestaurantCLoss = 6;
-            warwarLand.PrintRestaurants();
+            adorealLand.RestaurantAName = "Pizzasaurus Rex";
+            adorealLand.RestaurantAIncome = 5;
+            adorealLand.RestaurantALoss = 3;
+            adorealLand.RestaurantBName = "Planet Mars Burgers";
+            adorealLand.RestaurantBIncome = 8;
+            adorealLand.RestaurantBLoss = 7.5F;
+            adorealLand.RestaurantCName = "Salads Undersea";
+            adorealLand.RestaurantCIncome = 3;
+            adorealLand.RestaurantCLoss = 6;
+            adorealLand.PrintRestaurants();
 
-            warwarLand.PrintProfit();
+            adorealLand.PrintProfit();
         }
     }
 }
