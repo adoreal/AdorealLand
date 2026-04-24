@@ -1,6 +1,6 @@
 using System;
 
-public class SpinningRide : ThemeParkRide, IExtraDetails, ISpinningEngine
+public class SpinningRide : ThemeParkRide, IExtraDetails, ISpinningEngine, ISeating
 {
     private float spinningDegree;
     private float spinningSpeed;
@@ -11,6 +11,8 @@ public class SpinningRide : ThemeParkRide, IExtraDetails, ISpinningEngine
         this.spinningSpeed = spinningSpeed;
         this.spinningDegree = spinningDegree;
     }
+
+    public int SeatingCapacity => 10;
 
     public bool Start(string rideName)
     {

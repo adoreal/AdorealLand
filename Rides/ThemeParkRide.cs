@@ -15,4 +15,9 @@ public abstract class ThemeParkRide : IThemeParkRide
     {
         return this.Name + " goes " + this.Speed + "mph.\n";
     }
+
+    public virtual string ExtraDetails()
+    {
+        throw new System.NotImplementedException();
+    }
 }
