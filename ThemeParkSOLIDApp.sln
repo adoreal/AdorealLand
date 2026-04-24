@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLIDApp", "SOLIDApp.csproj", "{DDD91EFB-D917-449D-AC6E-018E0B56F651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLIDApp", "SOLIDApp.csproj", "{595E85BA-85D8-490B-9ED1-6A240CE7C296}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DDD91EFB-D917-449D-AC6E-018E0B56F651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDD91EFB-D917-449D-AC6E-018E0B56F651}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDD91EFB-D917-449D-AC6E-018E0B56F651}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDD91EFB-D917-449D-AC6E-018E0B56F651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595E85BA-85D8-490B-9ED1-6A240CE7C296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595E85BA-85D8-490B-9ED1-6A240CE7C296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595E85BA-85D8-490B-9ED1-6A240CE7C296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595E85BA-85D8-490B-9ED1-6A240CE7C296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {35BF7597-EB4A-4FD2-B61A-EEC33715DFC3}
+		SolutionGuid = {56FB5FFB-3A0A-4802-A706-16A177B5AAC3}
 	EndGlobalSection
 EndGlobal
