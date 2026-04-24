@@ -19,6 +19,11 @@ namespace SOLIDApp
 
             themeParkRides.Add(new SpinningRide("Teacups", 7, 360, 3));
             themeParkRides.Add(new BrokenRide("Pirates of the Carribean"));
+            themeParkRides.Add(new DarkRide("Haunted Mansion", 5, 7));
+            themeParkRides.Add(new DarkRide("It's A Small World", 5, 7));
+            themeParkRides.Add(new SpinningRide("Merry-Go-Round", 5, 360, 3));
+            
+
             //adorealLand.ThemeParkRides.Add(new DarkRide("Pirates of the Carribean", 5, 4));
             adorealLand.PrintRides();
 
