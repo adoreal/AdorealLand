@@ -6,22 +6,22 @@ namespace SOLIDApp
     {
         static void Main(string[] args)
         {
-            ThemePark warwarLand = new ThemePark();
-            warwarLand.TicketCost = 90;
-            warwarLand.AverageDailyAttendance = 50000;            
-            warwarLand.ThemeParkName = "War War Land";
+            ThemePark adorealLand = new ThemePark();
+            adorealLand.TicketCost = 90;
+            adorealLand.AverageDailyAttendance = 50000;
+            adorealLand.ThemeParkName = "Adoreal Land";
 
-            warwarLand.ThemeParkRides.Add(new DarkRide("Haunted Mansion", 5, 7));
-            warwarLand.ThemeParkRides.Add(new SpinningRide("Teacups", 7, 360, 3));
-            warwarLand.ThemeParkRides.Add(new DarkRide("Pirates of the Carribean", 5, 4));
-            warwarLand.PrintRides();
+            adorealLand.ThemeParkRides.Add(new DarkRide("Haunted Mansion", 5, 7));
+            adorealLand.ThemeParkRides.Add(new SpinningRide("Teacups", 7, 360, 3));
+            adorealLand.ThemeParkRides.Add(new DarkRide("Pirates of the Carribean", 5, 4));
+            adorealLand.PrintRides();
 
-            warwarLand.Restaurants.Add(new SpaceRestaurant("Pizzasaurus Rex", 5, 3, 1000));
-            warwarLand.Restaurants.Add(new SpaceRestaurant("Planet Mars Burgers", 8, 7.5F, 1000));
-            warwarLand.Restaurants.Add(new UnderseaRestaurant("Salads Undersea", 3, 6, 1000));
-            warwarLand.PrintRestaurants();
+            adorealLand.Restaurants.Add(new SpaceRestaurant("Pizzasaurus Rex", 5, 3, 1000));
+            adorealLand.Restaurants.Add(new SpaceRestaurant("Planet Mars Burgers", 8, 7.5F, 1000));
+            adorealLand.Restaurants.Add(new UnderseaRestaurant("Salads Undersea", 3, 6, 1000));
+            adorealLand.PrintRestaurants();
 
-            warwarLand.PrintProfit();
+            adorealLand.PrintProfit();
         }
     }
 }
