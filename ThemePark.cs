@@ -63,7 +63,12 @@ public class ThemePark {
     public void PrintRestaurants() {
         Console.WriteLine(ThemeParkName + " contains the following restaurants: \n");
         foreach (Restaurant restaurant in Restaurants) {
-            Console.WriteLine(restaurant.ExtraDetails());
+            if(restaurant is IExtraDetailsRestaurant)
+            {
+                Console.WriteLine(
+                    ((IExtraDetailsRestaurant)restaurant).ExtraDetails()
+                );
+            }
             Console.WriteLine(restaurant.RestaurantDetails());
 
         }
