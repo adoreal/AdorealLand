@@ -8,6 +8,6 @@ public class CatRestaurant : Restaurant
 
     public override string ExtraDetails()
     {
-        return this.Name + " has " + this.cats + " waiter cats.\n";
+        return this.Name + " has " + this.cats + " waiter cats ready to serve you. Don't forget to tip them!\n";
     }
 }
