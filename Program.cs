@@ -20,6 +20,7 @@ namespace SOLIDApp
             adorealLand.Restaurants.Add(new SpaceRestaurant("Pizzasaurus Rex", 5, 3, 1000));
             adorealLand.Restaurants.Add(new SpaceRestaurant("Planet Mars Burgers", 8, 7.5F, 1000));
             adorealLand.Restaurants.Add(new UnderseaRestaurant("Salads Undersea", 3, 6, 1000));
+            adorealLand.Restaurants.Add(new RatatouilleRestaurant("Ratatouille's Kitchen", 4, 5, 1000));
             adorealLand.PrintRestaurants();
 
             adorealLand.PrintProfit();
