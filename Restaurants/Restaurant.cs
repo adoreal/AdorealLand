@@ -19,9 +19,4 @@ public abstract class Restaurant : IRestaurant
     {
         return this.Name + " which generates " + this.Income + " in income and costs " + this.Loss + "\n";
     }
-
-    public virtual string ExtraDetails()
-    {
-        throw new System.NotImplementedException();
-    }
 }
