@@ -4,17 +4,17 @@ using System.Linq;
 
 public class ThemePark {
     private IList<IThemeParkRide> ThemeParkRides;
-    public List<Restaurant> Restaurants;
+    private IList<Restaurant> Restaurants;
     public string ThemeParkName;
     public float TicketCost;
     public int AverageDailyAttendance;
     private float TotalIncome { get; set; }  
     private float TotalCost { get; set; }  
 
-    public ThemePark(IList<IThemeParkRide> themeParkRides)
+    public ThemePark(IList<IThemeParkRide> themeParkRides, IList<Restaurant> restaurants)
     {
         ThemeParkRides = themeParkRides;
-        Restaurants = new List<Restaurant>();
+        Restaurants = restaurants;
     }
 
 
@@ -63,9 +63,13 @@ public class ThemePark {
     public void PrintRestaurants() {
         Console.WriteLine(ThemeParkName + " contains the following restaurants: \n");
         foreach (Restaurant restaurant in Restaurants) {
-            Console.WriteLine(restaurant.ExtraDetails());
+            if (restaurant is IExtraDetailsRestaurant)
+            {
+                Console.WriteLine(
+                    ((IExtraDetailsRestaurant)restaurant).ExtraDetails()
+                );
+            }
             Console.WriteLine(restaurant.RestaurantDetails());
-
         }
     }
 

@@ -12,7 +12,12 @@ namespace SOLIDApp
             themeParkRides.Add(new BrokenRide("Pirates of the Carribean"));
             themeParkRides.Add(new DarkRide("Haunted Mansion", 5, 7));
 
-            ThemePark adorealLand = new ThemePark(themeParkRides);
+            List<Restaurant> restaurants = new List<Restaurant>();
+            restaurants.Add(new RatatouilleRestaurant("Rat Restaurant", 5, 7, 1000));
+            restaurants.Add(new SpaceRestaurant("Pizzasaurus Rex", 5, 3, 1000));
+            restaurants.Add(new SpaceRestaurant("Planet Mars Burgers", 8, 7.5F, 1000));
+            restaurants.Add(new UnderseaRestaurant("Salads Undersea", 3, 6, 1000));
+            ThemePark adorealLand = new ThemePark(themeParkRides, restaurants);
             adorealLand.TicketCost = 90;
             adorealLand.AverageDailyAttendance = 50000;
             adorealLand.ThemeParkName = "Adoreal Land";
@@ -27,9 +32,6 @@ namespace SOLIDApp
             //adorealLand.ThemeParkRides.Add(new DarkRide("Pirates of the Carribean", 5, 4));
             adorealLand.PrintRides();
 
-            adorealLand.Restaurants.Add(new SpaceRestaurant("Pizzasaurus Rex", 5, 3, 1000));
-            adorealLand.Restaurants.Add(new SpaceRestaurant("Planet Mars Burgers", 8, 7.5F, 1000));
-            adorealLand.Restaurants.Add(new UnderseaRestaurant("Salads Undersea", 3, 6, 1000));
             adorealLand.PrintRestaurants();
 
             adorealLand.PrintProfit();

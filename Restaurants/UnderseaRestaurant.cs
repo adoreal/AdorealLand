@@ -1,4 +1,4 @@
-public class UnderseaRestaurant : Restaurant
+public class UnderseaRestaurant : Restaurant, IExtraDetailsRestaurant
 {
     private int milesUndersea;
     public UnderseaRestaurant(string name, float income, float loss, int milesUndersea) : base(name, income, loss)
@@ -6,7 +6,7 @@ public class UnderseaRestaurant : Restaurant
         this.milesUndersea = milesUndersea;
     }
 
-    public override string ExtraDetails()
+    public string ExtraDetails()
     {
         return "This restaurant pretends it is " + this.milesUndersea + " miles under the sea.\n";
     }
